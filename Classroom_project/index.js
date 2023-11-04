@@ -1,4 +1,4 @@
-import {getSumGrades, getPassingGrades, getFailingGrades, getNumberOfGrades, getAverageValue, getRaisedGrades} from "/Classroom_project_1/classroom.js";
+import {getSumGrades, getPassingGrades, getFailingGrades, getNumberOfGrades, getAverageValue, getRaisedGrades} from "/Classroom_project/classroom.js";
 
 const gradesForm = document.querySelector("#grades-form");
 const yourGrade = document.querySelector("#your-grade");

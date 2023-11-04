@@ -16,6 +16,7 @@ let resultValue = 0;
 for(let i = 0; i < numbers.length; i++){
     numbers[i].addEventListener('click', (e) => {
         let atr = e.target.getAttribute('value');
+        console.log(atr);
         if(isFirstValue === false){
             getFirstValue(atr);
         }

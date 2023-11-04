@@ -9,3 +9,13 @@
     </form>
 </main>
 <link rel="stylesheet" href="/Countries_dropdown/index.css" />
+<script type="module">
+    import {getDropdown} from "/Countries_dropdown/countries.js";
+
+    const countries = ["Netherlands", "Japan", "Mongolia"];
+
+    const html = getDropdown(countries);
+    console.log(html);
+    const select = document.querySelector("#countries-dropdown");
+    select.innerHTML = html;
+</script>

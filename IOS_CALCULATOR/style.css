@@ -15,7 +15,7 @@ html, body #fullheight{
 
 .result{
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: flex-end;
     color: white;
     height: 39%;
@@ -23,7 +23,7 @@ html, body #fullheight{
 
 .result span{
     margin-right: 60px;
-    font-size: 20px;
+    font-size: 210px;
     justify-self: flex-end;
 }
 

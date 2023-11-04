@@ -1,50 +1,46 @@
 /** @param {number[]} grades */
-export function getNumberOfGrades(grades) {
+export const getNumberOfGrades = grades => {
     // TODO: return the number of grades
     return grades.length;
 }
 
 /** @param {number[]} grades */
-export function getSumGrades(grades) {
+export const getSumGrades = grades => {
     // TODO: return the sum of all the grades
-    let sumx = 0;
-    grades.forEach(function(grade) {
-        sumx += grade;
+    let a = 0
+    grades.forEach((g)=>{
+        a+=g;
     })
-    return sumx;
+    return a;
 }
 
 /** @param {number[]} grades */
-export function getAverageValue(grades) {
+export const getAverageValue = grades => {
     // TODO: return the average value of all grades (sum of all grades divided by the total number of grades)
-    let sumx = 0;
-    grades.forEach(function(grade) {
-        sumx += grade;
+    let a = 0
+    grades.forEach((g)=>{
+        a+=g;
     })
-    return sumx/grades.length;
+    return a/grades.length;
 }
 
 /** @param {number[]} grades */
-export function getPassingGrades(grades) {
+export const getPassingGrades = grades => {
     // TODO: return all passing grades (10 and above)
-    return grades.filter(function(grade) {
-        return grade >= 10;
-    })
+    return grades.filter(g=>g>9); 
 }
 
 /** @param {number[]} grades */
-export function getFailingGrades(grades) {
+export const getFailingGrades = grades => {
     // TODO: return all failing grades (9 and below)
-    return grades.filter(function(grade) {
-        return grade < 10;
-    })
+    return grades.filter(g=>g<10); 
 }
 
 /** @param {number[]} grades */
-export function getRaisedGrades(grades) {
-    // TODO: return all the grades raised by 1 (no grade should exceed 20)
-    return grades.map(function(grade) {
-        if(grade<20) return grade + 1;
-        return grade;
+export const getRaisedGrades = grades => {
+    // TODO: return all the grades raised by 1 (grades should not exceed 20)
+    return grades.map((g)=>{
+        if(g<20) return g+=1;
+        return g;
     })
 }

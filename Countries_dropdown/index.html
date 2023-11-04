@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Country Select</title>
+    <link rel="stylesheet" href="/Countries_dropdown/index.css" />
+</head>
+<body>
 <nav class="navbar">
     <h1 class="nav-brand">Countries</h1>
 </nav>
@@ -8,14 +16,20 @@
         <select id="countries-dropdown"></select>
     </form>
 </main>
-<link rel="stylesheet" href="/Countries_dropdown/index.css" />
+
 <script type="module">
-    import {getDropdown} from "/Countries_dropdown/countries.js";
+    import { getDropdown } from "/Countries_dropdown/countries.js";
 
-    const countries = ["Netherlands", "Japan", "Mongolia"];
-
-    const html = getDropdown(countries);
-    console.log(html);
-    const select = document.querySelector("#countries-dropdown");
-    select.innerHTML = html;
+    document.addEventListener('DOMContentLoaded', (event) => {
+        const countries = ["Netherlands", "Japan", "Mongolia"];
+        const html = getDropdown(countries);
+        console.log(html);
+        const select = document.querySelector("#countries-dropdown");
+        if (select) {
+            select.innerHTML = html;
+        }
+    });
 </script>
+
+</body>
+</html>

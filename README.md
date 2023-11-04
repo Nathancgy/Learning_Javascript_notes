@@ -11,4 +11,4 @@ My personal journey in learning HTML, CSS, and Javascript - web development proj
 - **Countries_dropdown** 
 
 ### IOS_CALCULATOR 🧮
-![alt text](https://github.com/Nathancgy/Learning_Web_Development/blob/main/img/ios_calculator.png?raw=true)
+<img src="https://github.com/Nathancgy/Learning_Web_Development/blob/main/img/ios_calculator.png?raw=true" alt="alt text" width="50%">

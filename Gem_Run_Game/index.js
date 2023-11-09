@@ -1,6 +1,6 @@
-import GameScore from "./game-score.js";
+import GameScore from "/Gem_Run_Game/game-score.js";
 // Note: Collectible is only imported so that we can test your code
-import {Collectible, Coin, Gem} from "./collectibles.js";
+import {Collectible, Coin, Gem} from "/Gem_Run_Game/collectibles.js";
 
 // ---------------------------
 // USAGE OF CLASSES

@@ -5,8 +5,8 @@ const weatherDetails = document.querySelector('.weather-details');
 const error404 = document.querySelector('.not-found');
 
 search.addEventListener('click', () => {
-    require('dotenv').config();
-    const APIKey = process.env.API_KEY;
+    const APIKey = '303b7ad4afd79c0daf56c9c1ebab4512';
+    console.log('a');
 
     const city = document.querySelector('.search-box input').value;
 
